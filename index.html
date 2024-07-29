@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSpotlight</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>BookSpotlight</h1>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>Robert Kiyosaki</h5>
+            <p>Rich Dad Poor Dad by Robert Kiyosaki is a personal finance classic that contrasts the financial philosophies of two father figures: the author's own highly educated but financially struggling father (Poor Dad) and his best friend’s wealthy father (Rich Dad). Through anecdotes and lessons, Kiyosaki emphasizes the importance of financial literacy, investing, and entrepreneurship. The book challenges traditional views on money and employment, advocating for thinking differently about assets, liabilities, and the value of financial education. Its straightforward approach and relatable stories make it an accessible and thought-provoking read for those seeking to improve their financial mindset.</p>
+            <button onclick="del(event)">Delete</button>
+        </div>
+        <div class="book-container">
+            <h2>Ikigai</h2>
+            <h5>Héctor García and Francesc Miralles</h5>
+            <p>"Ikigai: The Japanese Secret to a Long and Happy Life," authored by Héctor García and Francesc Miralles, explores the concept of ikigai, a Japanese term meaning "reason for being." The book delves into how this idea contributes to a fulfilling and purposeful life, highlighting the importance of finding joy in everyday activities. Through interviews with residents of Okinawa, a region known for its high life expectancy, the authors uncover common practices that lead to happiness and longevity. "Ikigai" blends lifestyle tips with philosophical insights, encouraging readers to find balance and meaning in their lives by discovering their own ikigai.</p>
+            <button onclick="del(event)">Delete</button>
+        </div>
+        <div class="book-container">
+            <h2>Think Like a Monk</h2>
+            <h5> Jay Shetty</h5>
+            <p>"Think Like a Monk: Train Your Mind for Peace and Purpose Every Day" by Jay Shetty offers a guide to overcoming negative thoughts and habits by drawing on the principles Shetty learned during his time as a monk. The book combines practical advice with ancient wisdom, focusing on areas such as mindfulness, self-discipline, and gratitude. Shetty uses relatable stories and exercises to help readers cultivate a monk-like mindset, leading to greater clarity, purpose, and inner peace. This book is a resource for anyone looking to find tranquility and direction in the chaos of modern life.</p>
+            <button onclick="del(event)">Delete</button>
+        </div>
+        <div class="book-container">
+            <h2>The Courage to Be Disliked</h2>
+            <h5>Ichiro Kishimi and Fumitake Koga</h5>
+            <p>"The Courage to Be Disliked" is a thought-provoking dialogue that introduces readers to the ideas of Alfred Adler, a pioneering figure in psychology. The book challenges conventional beliefs about happiness and self-acceptance, emphasizing that one’s life is not determined by past traumas but by the meaning one ascribes to them. Through a conversation between a philosopher and a young man, the authors discuss concepts such as self-liberation, interpersonal relationships, and the courage to live authentically. The book encourages readers to embrace responsibility for their own lives and happiness.</p>
+            <button onclick="del(event)">Delete</button>
+        </div>
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form >
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="Book Review" id="book-description-input"></textarea>
+            <button id="add-book">Add</button>
+            <button id="cancel-popup">Cancel</button>
+        </form>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
